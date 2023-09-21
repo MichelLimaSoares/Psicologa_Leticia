@@ -4,7 +4,7 @@
     margin: 0;
 }
 :root {
-    --maincolor: #142a5e;
+    --maincolor: #00e2cf;
 }
 /* HEADER */
 nav{
@@ -14,12 +14,12 @@ nav{
     position: fixed;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     background-color: var(--maincolor);
-    opacity: 0.5;
-    height: 60px;
+    opacity: 0.7;
+    height: 80px;
     width: 100vw;
 }
 .nav-ul-li-a {
-    color:white;
+    color: black;
     text-decoration: none;
     padding: 1px;
     font-size: 1.2vw;
@@ -28,7 +28,7 @@ nav{
     opacity: 0.9;
 }
 .nav-ul li:hover{
-    background-color: #16306b;
+    background-color: var(--maincolor);
     border-radius: 6px;
 }
 .logo-nav img{
@@ -38,13 +38,13 @@ nav{
     padding: 2px;    
 }
 .logo-nav:hover{
-    background-color: #16306b;
-    opacity: 0.8;
+    background-color: var(--maincolor);
+    opacity: 0.9;
 }
 .nav-ul{
     display: flex;
     list-style: none;
-    color:white;
+    color: #000000;
 }
 .nav-ul li{
     letter-spacing: 3px;
@@ -54,12 +54,12 @@ nav{
 .nav-menu-bars{
     display: none;
     cursor: pointer;
-    color:white;
+    color: #000000;
 }
 .nav-menu-bars div{
     width: 32px;
     height: 2px;
-    background: rgb(246, 244, 244);
+    background: #000000;
     margin: 8px;
     transition: 0.3s;
 }
@@ -82,10 +82,11 @@ body {
     width: 500px;
     height: 400px;
     margin: 100px 0;
-    border-radius: 20px;
+    border-radius: 10px;
     object-fit: cover;
     z-index: -1;
-    box-shadow: 4px 0 10px #777, 8px 0 5px 0 #aaa;
+    box-shadow: 1px 0 5px #777, 5px 0 1px 0 #aaa;
+    opacity: 0.8;
 }
 .description{
     display: flex;
@@ -110,20 +111,20 @@ h1{
     font-size: 2.5em;
     letter-spacing: 2.5px;
     margin: 24px 0;
-    color: #5e5e5e;
+    color: #000000;
 }
 h1 span{
-    color: var(--maincolor);
+    color: white;
 }
 .smallDescription{
     letter-spacing: 1px;
-    color: #777;
+    color: #000000;
     font-size: 1.2rem;
     min-width: 250px;
     line-height: 1.5;
 }
 .smallDescription span {
-    color: var(--maincolor);
+    color: white;
     font-size: 1.2rem;
     font-weight: 550;
 }
@@ -134,19 +135,19 @@ h1 span{
 }
 .resumeLink{
     display: inline-block;
-    background: var(--maincolor);
-    margin: -13px 0;
-    padding: 15px 35px;
+    background: white;
+    margin: -10px 0;
+    padding: 10px 35px;
     border-radius: 10px;
     letter-spacing: 2.5px;
     font-size: 1rem;
     font-weight: 300;
     transition: box-shadow 0.2s;
-    color: #eee;
+    color: #000000;
     text-decoration: none;
 }
 .resumeLink:hover{
-    box-shadow: 0 2px 15px 0 #000a61;
+    box-shadow: 0 2px 15px 0 #000000;
 }
 .socialList{
     display: flex;
@@ -156,14 +157,14 @@ h1 span{
 .socialList li a{
     margin: 0 14px;
     padding: 9px 10px;
-    background: #fff;
+    background: #000000;
     border-radius: 6px;
     color: var(--maincolor);
-    border: 1px solid #ccc;
+    border: 1px solid #2d2a2a;
     box-shadow: 0 4px 6px 0 #777;
 }
 .socialList li a:hover{
-    box-shadow: 0 2px 15px 0 #000a61;
+    box-shadow: 0 2px 15px 0 #000000;
 }
 .socialList li a i{
     color: var(--maincolor)
@@ -183,11 +184,11 @@ h1 span{
 }
 .information{
     background-color: #fdf6f696;
-    padding: 30px 10vw;
-    border-radius: 50px;
+    padding: 20px 10vw;
+    border-radius: 10px;
     font-size: 1.1rem;
     letter-spacing: 1px;
-    width: 75vw;
+    width: 80vw;
     text-align: justify;
     align-self: center;
 }
@@ -215,8 +216,8 @@ h1 span{
     align-self: center;
     background-color: #fdf6f696;
     padding: 30px;
-    border-radius: 50px;
-    width: 75vw;
+    border-radius: 10px;
+    width: 80vw;
 }
 .grid-items-div-academic{
     display: flex;
@@ -262,8 +263,8 @@ h1 span{
     justify-content: center;
     background-color: #fdf6f696;
     padding: 30px;
-    border-radius: 50px;
-    width: 75vw;
+    border-radius: 10px;
+    width: 80vw;
     align-self: center;
 }
 .grid-items-div-experience{
@@ -329,10 +330,10 @@ h1 span{
     grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
     background-color: #fdf6f696;
     padding: 30px;
-    border-radius: 50px;
+    border-radius: 10px;
     grid-column-gap: 55px;
     grid-row-gap: 55px;
-    width: 75vw;
+    width: 80vw;
 }
 .grid-items{
     justify-self: center;
@@ -361,7 +362,7 @@ h1 span{
 .contact{
     display: flex;
     flex-direction: column;
-    margin: 0 40px;
+    margin: 0 30px;
 }
 .title-contact{
     margin: 50px 20px 30px;
@@ -374,12 +375,13 @@ h1 span{
     display: flex;
     flex-direction: column;
     background-color: #fdf6f696;
+    opacity: 0.8;
     align-items: center;
     justify-content: center;
     align-self: center;
-    border-radius: 50px;
-    margin: 0px 35px;
-    width: 75vw;
+    border-radius: 10px;
+    margin: 0px 1px;
+    width: 80vw;
 }
 .contact-details-email{
     margin: 20px;
@@ -399,7 +401,7 @@ h1 span{
     text-align: center;
     text-decoration: none;
     padding: 10px;
-    color: var(--maincolor);
+    color: #000000;
     font-size: 18px;
 }
 .contact-details-email p{
@@ -426,7 +428,7 @@ h1 span{
 .name{
     height: 6vh;
     width: 31vw;
-    border-radius: 10px;
+    border-radius: 5px;
     margin-bottom: 10px;
     margin-right: 0.3vw;
     padding: 7px;
@@ -436,8 +438,8 @@ h1 span{
 .email{
     display: inline;
     height: 6vh;
-    width: 40vw;
-    border-radius: 10px;
+    width: 44vw;
+    border-radius: 5px;
     margin-bottom: 10px;
     margin-right: 0.1vw;
     padding: 7px;
@@ -446,8 +448,8 @@ h1 span{
 }
 .subject{
     height: 6vh;
-    width: 71.7vw;
-    border-radius: 10px;
+    width: 75.7vw;
+    border-radius: 5px;
     margin-bottom: 10px;
     margin-right: 0.4vw;
     padding: 7px;
@@ -457,20 +459,21 @@ h1 span{
 textarea{
     resize: none;
     height: 25vh;
-    width: 71.7vw;
+    width: 75.7vw;
     margin: 10px 0;
-    border-radius: 15px;
-    padding: 8px;
+    border-radius: 5px;
+    padding: 5px 1px;    
 }
 .submit{
     position: relative;
     font-size: 15px;
     padding: 10px;
-    border-radius: 10px;
+    border-radius: 5px;
     border: 1px solid #aaa;
-    color: #eee;
-    background-color: var(--maincolor);
+    color: #000000;
+    background-color: white;
     left: 45%;
+    align-items: center;
 }
 /* FOOTER */
 footer{
@@ -486,7 +489,7 @@ footer{
     text-align: center;
     padding: 2vh 0;
     font-weight: bold;
-    color: #eee;
+    color: #000000;
     font-size: 1rem;
 }
 /* RESPONSIVE */
@@ -518,15 +521,13 @@ footer{
         right: 3px;
         width: 38vw;
         height: 92vh;
-        background: #142a5e;
+        background: var(--maincolor);
         align-items: center;
         justify-content: space-around;
         transform: translateX(0.3s ease-in);
-        opacity: 0.9;
         transition: transform 0.3s ease-in;
     }
     .nav-ul li{
-        opacity: 2;
         letter-spacing: 3px;
         margin-left: 2px;
         padding: 5px;
@@ -540,11 +541,12 @@ footer{
         width: 220px;
     }
     .nav-ul-li-a {
-        color:white;
+        color: black;
         text-decoration: none;
         padding: 1px;
-        font-size: 14px;
+        font-size: 15px;
         margin: 5px;
+        background-color: #00e2cf;
     }
     .nav-menu-bars-active .line1{
         transform: rotate(-45deg) translate(-8px, -8px);
@@ -617,20 +619,21 @@ footer{
     .socialMedia{
         display: inline-flex;
         flex-direction: column;
-        margin: 2px;
+        margin: 1px;
         margin-top: 0.2rem;
+        height: 70px;
     } 
-    .resumeLink{
+    .resumeLink {
         display: inline-block;
-        background: var(--maincolor);
-        margin: -13px 0;
-        padding: 15px 25px;
-        border-radius: 40px;
+        background: white;
+        margin: -10px 0;
+        padding: 10px 25px;
+        border-radius: 10px;
         letter-spacing: 0.5px;
         font-size: 1rem;
-        font-weight: 300;
+        font-weight: 200px;
         transition: box-shadow 0.2s;
-        color: #eee;
+        color: #000000;
         text-decoration: none;
     }  
     .main-img img{
@@ -664,11 +667,11 @@ footer{
         text-align: justify;
         align-self: center;
         background: #fff;
-        padding: 30px 9vw;
-        border-radius: 50px;
-        font-size: 1.1rem;
-        letter-spacing: 0.3px;
-        width: 75vw;
+        padding: 25px 9vw;
+        border-radius: 10px;
+        font-size: 1rem;
+        letter-spacing: 0.1px;
+        width: 80vw;
     }
     .title-skills{
         margin-top: 10vh;
@@ -794,9 +797,9 @@ footer{
         justify-content: center;
         font-size: 10px;
         padding: 5px;
-        border-radius: 10px;
+        border-radius: 5px;
         border: 1px solid #aaa;
-        color: #eee;
+        color: #000000;
         background-color: var(--maincolor);
         left: 45%;
     }
