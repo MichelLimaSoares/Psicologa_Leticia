@@ -640,6 +640,7 @@ footer{
         margin: 10px 2px 15px;
         width: 350px;
         height: 270px;
+        opacity: 0.8;
     }
     h1{
         font-size: 1.7rem;
@@ -667,6 +668,7 @@ footer{
         text-align: justify;
         align-self: center;
         background: #fff;
+        opacity: 0.7;
         padding: 25px 9vw;
         border-radius: 10px;
         font-size: 1rem;
