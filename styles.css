@@ -211,7 +211,6 @@ h1 span{
 .grid-container-academic{
     display: grid;
     grid-template-columns: repeat(2, 30vw);
-    grid-template-rows: repeat(2, 17vw);
     justify-content: center;
     align-self: center;
     background-color: #fdf6f696;
@@ -226,16 +225,20 @@ h1 span{
     align-items: center;
     margin: 1vw 1vw;
 }
-.grid-items-div-academic h3{
+.grid-items-div-academic h4{
     text-align: center;
     font-size: 1.1vw;
     padding: 0.5vw;
     margin: 0 1vw;
 }
+.grid-items-div-academic p{
+    text-align: center;
+    font-size: 1vw;
+}
 .grid-items-academic{
     width: 20vw;
     height: 12vw;
-    border-radius: 20px;
+    border-radius: 10px;
 }
 .grid-items-academic:hover{
     box-shadow: 0 3px 15px 0 #777;
@@ -259,7 +262,6 @@ h1 span{
 .grid-container-experience{
     display: grid;
     grid-template-columns: repeat(2, 30vw);
-    grid-template-rows: repeat(3, 17vw);
     justify-content: center;
     background-color: #fdf6f696;
     padding: 30px;
@@ -277,7 +279,7 @@ h1 span{
 .grid-items-experience{
     width: 20vw;
     height: 12vw;
-    border-radius: 20px;
+    border-radius: 10px;
 }
 .grid-items-experience:hover{
     box-shadow: 0 3px 15px 0 #777;
@@ -710,16 +712,19 @@ footer{
     }
     .grid-container-academic{
         grid-template-columns: repeat(2, 35vw);
-        grid-template-rows: repeat(2, 27vw);
     }
     .grid-items-academic{
         width: 27vw;
         height: 17vw;
     }
-    .grid-items-div-academic h3{
+    .grid-items-div-academic h4{
         text-align: center;
-        font-size: 2vw;
+        font-size: 1.4vw;
         padding: 0.5vw;
+    }
+    .grid-items-div-academic p{
+        text-align: center;
+        font-size: 1.4vw;
     }
     .title-experience{
         margin-top: 10vh;
@@ -727,7 +732,6 @@ footer{
     }
     .grid-container-experience{
         grid-template-columns: repeat(2, 35vw);
-        grid-template-rows: repeat(3, 27vw);
     }
     .grid-items-experience{
         width: 25vw;
@@ -744,7 +748,7 @@ footer{
     }
     .grid-items-div-experience p{
         text-align: center;
-        font-size: 1.3vw;
+        font-size: 1.4vw;
     }  
     .contact{
         display: flex;
