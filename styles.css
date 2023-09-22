@@ -22,13 +22,13 @@ nav{
     color: black;
     text-decoration: none;
     padding: 1px;
-    font-size: 1.2vw;
+    font-size: 1.3vw;
 }
 .nav-ul-li-a:hover{
     opacity: 0.9;
 }
 .nav-ul li:hover{
-    background-color: var(--maincolor);
+    background-color: #066059;
     border-radius: 6px;
 }
 .logo-nav img{
@@ -375,7 +375,6 @@ h1 span{
     display: flex;
     flex-direction: column;
     background-color: #fdf6f696;
-    opacity: 0.8;
     align-items: center;
     justify-content: center;
     align-self: center;
@@ -544,9 +543,16 @@ footer{
         color: black;
         text-decoration: none;
         padding: 1px;
-        font-size: 15px;
-        margin: 5px;
+        font-size: 20px;
+        margin: 3px;
         background-color: #00e2cf;
+    }
+    .nav-ul-li-a:hover{
+        opacity: 0.9;
+    }
+    .nav-ul li:hover{
+        background-color: #066059;
+        border-radius: 6px;
     }
     .nav-menu-bars-active .line1{
         transform: rotate(-45deg) translate(-8px, -8px);
@@ -667,8 +673,7 @@ footer{
     .information{
         text-align: justify;
         align-self: center;
-        background: #fff;
-        opacity: 0.7;
+        background-color: #fdf6f696;
         padding: 25px 9vw;
         border-radius: 10px;
         font-size: 1rem;
@@ -753,7 +758,7 @@ footer{
     .contact-details{
         display: flex;
         flex-direction: column;
-        background: #fff;
+        background-color: #fdf6f696;
         border-radius: 20px;
         margin: 25px 20px;
         width: 75vw;
